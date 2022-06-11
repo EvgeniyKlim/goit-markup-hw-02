@@ -1,6 +1,215 @@
+:root {
+  --primary-text-color: #212121;
+  --second-text-color: #2196f3;
+  --second-text-logo-color: #ffffff;
+  --background-head-color: #ffffff;
+  --background-work-color: #e5e5e5;
+  --background-comand-color: #f5f4fa;
+  --background-footer-color: #2f303a;
+  --p-text-color: #757575;
+  --contakt-footer-color: rgba(255, 255, 255, 0.6);
+  --text-line-letter: 0.03em;
+  --font-size-middle: 14px;
+}
+
 body {
-  font-family: 'Raleway', sans-serif;
   font-family: 'Roboto', sans-serif;
 }
-font-family: 'Raleway', sans-serif;
-font-family: 'Roboto', sans-serif;
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/*------------------ main and footer ------------------*/
+.logo {
+  color: var(--second-text-color);
+  font-family: 'Raleway';
+  font-weight: 700;
+  font-style: inherit;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: var(--text-line-letter);
+  text-decoration: none;
+}
+
+.logo-header {
+  color: var(--primary-text-color);
+}
+
+.logo-footer {
+  color: var(--second-text-logo-color);
+}
+
+.nav-title {
+  color: var(--primary-text-color);
+  font-weight: 500;
+  font-size: var(--font-size-middle);
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+.nav-title:hover,
+.nav-title:focus {
+  color: var(--second-text-color);
+}
+
+.contact-head {
+  color: var(--p-text-color);
+  font-weight: 500;
+  font-size: var(--font-size-middle);
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
+.contact-head:hover,
+.contact-head:focus,
+.contact-footer-color:hover,
+.contact-footer-color:focus {
+  color: var(--second-text-color);
+}
+
+/*------------------ contakt footer ------------------*/
+.contact-footer-address-color {
+  color: var(--background-head-color);
+  font-style: normal;
+  font-weight: 400;
+  font-size: var(--font-size-middle);
+  line-height: 1.71;
+  letter-spacing: var(--text-line-letter);
+}
+
+.contact-footer-color {
+  font-style: normal;
+  font-weight: 400;
+  font-size: var(--font-size-middle);
+  line-height: 1.71;
+  letter-spacing: var(--text-line-letter);
+  color: var(--contakt-footer-color);
+}
+
+/*------------------ block hero ------------------*/
+.section-title-hero {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--background-head-color);
+  background-color: #2f303a;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  padding: 200px 0;
+}
+
+.button-hero {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: var(--background-head-color);
+  background: var(--second-text-color);
+  border-color: transparent;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.button-hero:hover,
+.button-hero:focus {
+  background: var(--primary-text-color);
+}
+
+/*------------------ section work ------------------*/
+.section-title-text {
+  font-size: var(--font-size-middle);
+  line-height: 1.14;
+  letter-spacing: var(--text-line-letter);
+  text-transform: uppercase;
+  color: var(--primary-text-color);
+}
+
+.section-p-text {
+  font-weight: 400;
+  font-size: var(--font-size-middle);
+  line-height: 1.71;
+  letter-spacing: var(--text-line-letter);
+  color: var(--p-text-color);
+}
+
+.section-title-work {
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: var(--text-line-letter);
+  color: var(--primary-text-color);
+}
+
+/*------------------ my team ------------------*/
+.section-team-text {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+  text-align: center;
+  letter-spacing: var(--text-line-letter);
+  color: var(--primary-text-color);
+}
+
+.section-p-team-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.18;
+  text-align: center;
+  letter-spacing: var(--text-line-letter);
+  color: var(--p-text-color);
+}
+
+/*------------------ portfolio page ------------------*/
+
+.current {
+  color: var(--second-text-color);
+}
+
+/*------------------ portfolio navi block ------------------*/
+.button-filter {
+  font-family: 'Roboto';
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.63;
+  text-align: center;
+  letter-spacing: var(--text-line-letter);
+  color: var(--primary-text-color);
+  background-color: var(--background-comand-color);
+  width: auto;
+  height: 38px;
+  border: none;
+  border-radius: 4px;
+}
+
+.button-filter:hover,
+.button-filter:focus {
+  color: var(--background-head-color);
+  background: var(--second-text-color);
+}
+
+/*------------------ my projects ------------------*/
+.section-title {
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--primary-text-color);
+}
+.section-p-text-port {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: var(--text-line-letter);
+  color: var(--p-text-color);
+}
+
+.footer-bg {
+  background-color: #2f303a;
+}
